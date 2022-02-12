@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suport contact</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Support contact</legend>
+        <label for="type">Type of support:</label>
+        <input
+          type="text"
+          list="type"
+          placeholder="choose the type of service"
+        />
+        <br />
+        <br />
+        <label for="name">Name Complete:</label>
+        <input 
+          type="text" 
+          name="name" 
+          id="name" 
+          minlength="4"
+          autocomplete="off"
+          required
+          title="Complete name please."/>
+
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          required
+          placeholder="my@email.com"/>
+
+        <br />
+        <br />
+
+        <label for="message">Message:</label>
+        <br />
+        <textarea 
+          name="message" 
+          id="message" 
+          cols="30" 
+          rows="10"
+          minlength="1"
+          maxlength="4000"
+          placeholder="write your message."
+          title="write your message, your question, your doubt or suggestions"></textarea>
+        <br />
+        <br />
+        <input type="checkbox" name="notification" id="notification" />
+        <label for="notification">I agree to receive news by email</label>
+
+        <br />
+        <br />
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
+
+    <datalist id="type">
+      <option>Systems support</option>
+      <option>Technical support</option>
+      <option>Data Analyst</option>
+      <option>Pisicologo</option>
+    </datalist>
+  </body>
+</html>
